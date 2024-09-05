@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Confirmation</title>
+</head>
+<body>
+    <h1>Feedback Confirmation</h1>
+    <p>Thank you for your feedback!</p>
+    
+    <h2>Recent Feedback Entries:</h2>
+    <ul>
+        {% for feedback_entry in feedback_entries %}
+            <li>{{ feedback_entry.name }} - {{ feedback_entry.created_at }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
